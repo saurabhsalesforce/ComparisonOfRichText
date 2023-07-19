@@ -1,0 +1,29 @@
+<template>
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_large">
+    <div class="slds-modal__container">
+        <div class="slds-modal__header">
+            <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Comparison between last two versions</h1>
+        </div>
+        <div class="slds-modal__content" id="modal-content-id-1">
+            <div class="input">
+                <div class="inputData">
+                    <h1 class="heading">Previous Version</h1>
+                    <lightning-formatted-rich-text value={firstItemData.From__c} class="left" data-id="left"></lightning-formatted-rich-text>
+                </div>
+                <div class="inputData">
+                    <h1 class="heading">Current Version</h1>
+                    <lightning-formatted-rich-text value={firstItemData.To__c} class="right" data-id= "right"></lightning-formatted-rich-text>
+                </div>
+            </div>
+            <div class="inputData">
+                <h1 class="heading">Compared Version</h1>
+                <lightning-formatted-rich-text value = {comparedData} class="unified"></lightning-formatted-rich-text>
+            </div>
+        </div>
+        <div class="slds-modal__footer">
+             <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+        </div>
+    </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</template>

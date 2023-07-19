@@ -1,0 +1,112 @@
+template{
+    background-color: white;
+  }
+  .input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1px;
+    background-color: white;
+  }
+  .left{
+    margin: 8px 8px;
+    padding: 10px 10px;
+  }
+  .right{
+    margin: 8px 8px;
+    padding: 10px 10px;
+  }
+  .unified{
+    margin: 8px 8px;
+    padding: 10px 0px;
+    background-color: white;
+  }
+  .mainHeading{
+    text-align: center;
+  }
+  .heading{
+    font-size: 20px;
+    text-align: center;
+  
+  }
+  .inputData{
+    border: 2px solid black;
+    margin: 2px 2px;
+    padding: 8px 8px;
+  }
+  .description{
+    margin: 40px 0px;
+  }
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* 
+  .html-diff-create-text{
+    background:rgb(176, 242, 255)
+  }
+  .html-diff-delete-text{
+    color:#8e3ee2;
+    text-decoration-color:#7024c0;
+    text-decoration-line:line-through
+  } */
+  /* 
+  .html-diff-create-img>img{
+    background: rgb(176, 242, 255);
+    border: 3px solid rgb(176, 242, 255);
+    box-shadow: 0 0 10px 5px rgb(176, 242, 255);
+    opacity: 0.8;
+  }
+  .html-diff-delete-img>img{
+    background: #7024c0;
+    border: 3px solid #7024c0;
+    box-shadow: 0 0 10px 5px #7024c0;
+    opacity: 0.8;
+  } */
+  button {
+    transition-duration: 0.4s;
+      color: black;
+      border: 2px solid rgb(84, 186, 255); /* Green */
+      margin: 10px ;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: rgb(84, 186, 255); /* Green */
+    color: white;
+  }
+  
+  

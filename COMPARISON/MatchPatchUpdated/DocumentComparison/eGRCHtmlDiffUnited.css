@@ -1,0 +1,11 @@
+.unifiedResult{
+	background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.object {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+}

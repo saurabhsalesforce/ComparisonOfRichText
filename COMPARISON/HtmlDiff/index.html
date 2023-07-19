@@ -1,0 +1,8 @@
+<template>
+    <div class="input">
+        <lightning-formatted-rich-text value={firstItemData.From__c} class="left" data-id="left"></lightning-formatted-rich-text>
+        <lightning-formatted-rich-text value={firstItemData.To__c} class="right" data-id= "right"></lightning-formatted-rich-text>
+    </div>
+    <button onclick={handleClick2}>Compare with html-diff library</button>
+    <div lwc:dom = "manual" class="unified"></div>
+</template>

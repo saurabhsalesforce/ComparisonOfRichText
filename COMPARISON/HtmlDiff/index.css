@@ -1,0 +1,189 @@
+template {
+    background-color: white;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    margin: 4px;
+    background-color: white;
+}
+
+.left {
+    border: 2px solid rgb(19, 141, 165);
+    margin: 8px;
+    padding: 10px;
+}
+
+.right {
+    border: 2px solid rgb(19, 141, 165);
+    margin: 8px;
+    padding: 10px;
+}
+
+.unified {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.mainHeading {
+    text-align: center;
+}
+
+.description {
+    margin: 40px 0px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.html-diff-create-text {
+    background: rgb(176, 242, 255)
+}
+
+.html-diff-delete-text {
+    color: #8e3ee2;
+    text-decoration-color: #7024c0;
+    text-decoration-line: line-through
+}
+
+button {
+    transition-duration: 0.4s;
+    /* background-color: white; */
+    color: black;
+    border: 2px solid rgb(84, 186, 255);
+    /* Green */
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgb(84, 186, 255);
+    /* Green */
+    color: white;
+}
+
+.html-diff-create-text-wrapper {
+    background: #d4eee9
+}
+
+.html-diff-delete-text-wrapper {
+    color: #8e3ee2;
+    text-decoration-color: #7024c0;
+    text-decoration-line: line-through
+}
+
+.html-diff-create-block-wrapper,
+.html-diff-create-inline-wrapper,
+.html-diff-delete-block-wrapper,
+.html-diff-delete-inline-wrapper {
+    align-items: center;
+    flex-direction: row;
+    position: relative
+}
+
+.html-diff-create-block-wrapper:after,
+.html-diff-create-inline-wrapper:after,
+.html-diff-delete-block-wrapper:after,
+.html-diff-delete-inline-wrapper:after {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.html-diff-create-block-wrapper .html-diff-close-icon:after,
+.html-diff-create-block-wrapper .html-diff-close-icon:before,
+.html-diff-create-inline-wrapper .html-diff-close-icon:after,
+.html-diff-create-inline-wrapper .html-diff-close-icon:before,
+.html-diff-delete-block-wrapper .html-diff-close-icon:after,
+.html-diff-delete-block-wrapper .html-diff-close-icon:before,
+.html-diff-delete-inline-wrapper .html-diff-close-icon:after,
+.html-diff-delete-inline-wrapper .html-diff-close-icon:before {
+    background-color: #7b2ccf;
+    border-radius: 2px;
+    content: "";
+    height: 34px;
+    left: 50%;
+    position: absolute;
+    top: calc(50% - 17px);
+    width: 4px
+}
+
+.html-diff-create-block-wrapper .html-diff-close-icon:before,
+.html-diff-create-inline-wrapper .html-diff-close-icon:before,
+.html-diff-delete-block-wrapper .html-diff-close-icon:before,
+.html-diff-delete-inline-wrapper .html-diff-close-icon:before {
+    transform: rotate(45deg)
+}
+
+.html-diff-create-block-wrapper .html-diff-close-icon:after,
+.html-diff-create-inline-wrapper .html-diff-close-icon:after,
+.html-diff-delete-block-wrapper .html-diff-close-icon:after,
+.html-diff-delete-inline-wrapper .html-diff-close-icon:after {
+    transform: rotate(-45deg)
+}
+
+.html-diff-create-block-wrapper:after,
+.html-diff-create-inline-wrapper:after {
+    background: rgba(212, 238, 233, .7)
+}
+
+.html-diff-delete-block-wrapper:after,
+.html-diff-delete-inline-wrapper:after {
+    background: rgba(222, 207, 227, .7)
+}
+
+.html-diff-create-block-wrapper,
+.html-diff-delete-block-wrapper {
+    display: flex;
+    width: 100%
+}
+
+.html-diff-create-inline-wrapper,
+.html-diff-delete-inline-wrapper {
+    display: inline-flex
+}
