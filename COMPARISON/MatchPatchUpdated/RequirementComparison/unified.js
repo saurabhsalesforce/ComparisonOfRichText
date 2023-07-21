@@ -85,6 +85,10 @@ export function unified(diffs){
                     {
                         result+=wrapImg(diffs[i][0], arr[j]);
                     }
+                    else if(arr[j][1] === 't' || arr[j][2] === 't' )
+                    {
+                        result+=arr[j];
+                    }
                 }
             }
             else{
